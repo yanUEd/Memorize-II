@@ -77,7 +77,8 @@ struct CardView: View {
             let card = RoundedRectangle(cornerRadius: 12)
             Group {
                 card.fill(.white).strokeBorder(lineWidth: 2)
-                Text(content).font(.largeTitle)
+                Text(content)
+                    .font(.largeTitle)
             }
             .opacity(isFaceUp ? 1 : 0)
             card.fill().opacity(isFaceUp ? 0 : 1)
